@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /* ### Primary */
+
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--VerydarkbluemainBG: hsl(217, 54%, 11%);
+--VerydarkbluecardBG: hsl(216, 50%, 16%);
+--Verydarkblueline: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+
+body{
+    display: flex;
+    background: var(--VerydarkbluemainBG);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--White);
+}
+
+
+.full{
+    display: flex;
+    background-color: var(--VerydarkbluecardBG);
+    height: 600px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.main{
+    height:550px ;
+    width: 320px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+img, .overlay{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.g{
+    width:100%;
+    height: 55%;
+    border-radius: 10px;
+}
+
+.g:hover{
+    background: url(/nft-preview-card-component-main/images/icon-view.svg) center no-repeat;
+}
+
+.overlay:hover{
+    cursor: pointer;
+    background: var(--Cyan);
+    opacity:0.7;
+
+}
+img:hover{
+    cursor: pointer;
+    opacity:0.4;
+}
+
+
+.text{
+    height: 45%;
+    border: 5px;;
+} 
+
+.price,.foot{
+    height: 25%;
+}
+
+
+h2:hover,.name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Outfit:wght@600&family=Red+Hat+Display:wght@900&display=swap');
+.t{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.para{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--Softblue);
+
+}
+
+
+/* 3rd div */
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cry{
+    font-family: 'Lora', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Cyan);
+    display: inline-flex;
+    height: 100%;
+    width: 89px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.cr{
+    color:var(--Softblue)
+}
+/* 3rd divv */
+
+.time{
+    display: inline-flex;
+    height: 100%;
+    width: 88px;
+    color: var(--Softblue);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* last div */
+.foot{
+    display: flex;
+    border-top-style: solid;
+    border-top-width:1px;
+    border-color: var(--Verydarkblueline);
+    align-items: center;
+
+}
+
+
+.avatar{
+    display: inline-block;
+    border-color: var(--White);
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.create{
+    margin-left: 15px;
+}
+
+@media(max-width:375px){
+    body{
+        height:100vh;
+        width: 100vw;
+        /* padding: 0 2.5rem; */
+    }
+
+}
